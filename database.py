@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("")  # add the connection string 
 database = client["management_db"]
 
 task_collection = database["tasks_collection"]
